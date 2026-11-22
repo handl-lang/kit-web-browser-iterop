@@ -1,0 +1,7 @@
+-- kit-web-browser-iterop: kit.hnl v1 — pure curation manifest
+-- (host/project/proposals/proposal-0004). libs entries are module
+-- names per each lib's pkg.hnl `modules:` field.
+{ name: "kit-web-browser-iterop",
+  description: "Browser/client-side JS interop — call/invoke/await into JS, fetch and WebSocket over generated WebIDL bindings, JSON + JS str backend.",
+  license: "MIT",
+  libs: ["js", "fetch-js", "ws_whatwg_wasm", "json", "str-js"], }

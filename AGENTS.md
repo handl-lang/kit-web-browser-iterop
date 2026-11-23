@@ -43,7 +43,7 @@ code here and no gate script yet — validation is pending loader work.
 
 DOM/HTML WebIDL specs live inside **lib-js** (`specs/dom.idl`,
 `specs/html.idl`); the generated package lands in
-`lib-js/handl-packages/generated/dom-webidl-browser/` via sdkgen-webidl
+`lib-js/handl-packages/generated/dom/dom-webidl-browser/` via sdkgen-webidl
 (consumed via dep/path imports, the lib-fetch-js pattern). It is a build
 artifact of the `js` dep — no separate lib entry is listed. Specs for
 `websockets`/`storage`/`console` are planned in the same place.

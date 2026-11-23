@@ -25,7 +25,7 @@ field (all verified to exist — see `AGENTS.md` for the table).
 ## DOM bindings
 
 DOM/HTML WebIDL lives inside **lib-js** (`specs/dom.idl`,
-`specs/html.idl`); sdkgen generates
+`specs/html.idl`); codegen generates
 `handl-packages/generated/dom/dom-webidl-browser/` inside lib-js, consumed
 via dep/path imports (the lib-fetch-js pattern). No separate lib entry
 — it travels with the `js` dep.

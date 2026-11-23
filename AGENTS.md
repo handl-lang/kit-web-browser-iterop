@@ -59,7 +59,7 @@ artifact of the `js` dep — no separate lib entry is listed. Specs for
 - **Validation**: kit.hnl has no loader/gate yet — manifest correctness
   is by inspection against the lib repos' `pkg.hnl`.
 - The proposal's `plugins: ["compile-js"]` is dropped under kit.hnl v1
-  (no plugins field); `engine-compile-js` browser targets (esm/iife/
+  (no plugins field); `tool-compile-js` browser targets (esm/iife/
   inline) remain a host-side concern.
 
 ## License

@@ -4,4 +4,4 @@
 { name: "kit-web-browser-iterop",
   description: "Browser/client-side JS interop — call/invoke/await into JS, fetch and WebSocket over generated WebIDL bindings, JSON + JS str backend.",
   license: "MIT",
-  libs: ["js", "fetch-js", "ws_whatwg_wasm", "json", "str-js"], }
+  libs: ["js", "concurrent", "concurrent-js", "fetch-js", "ws_whatwg_wasm", "json", "json-js", "str-js", "log", "log-js"], }

@@ -16,7 +16,7 @@ generated WebIDL bindings, JSON, and the JS `str` backend.
 { name: "kit-web-browser-iterop",
   description: "Browser/client-side JS interop — call/invoke/await into JS, fetch and WebSocket over generated WebIDL bindings, JSON + JS str backend.",
   license: "MIT",
-  libs: ["js", "fetch-js", "ws_whatwg_wasm", "json", "str-js"], }
+  libs: ["js", "concurrent", "concurrent-js", "fetch-js", "ws_whatwg_wasm", "json", "json-js", "str-js", "log", "log-js"], }
 ```
 
 `libs` entries are module names per each lib's `pkg.hnl` `modules:`
@@ -38,9 +38,9 @@ via dep/path imports (the lib-fetch-js pattern). No separate lib entry
 - **JS→handl callbacks**: no `on_event`/listener registration exists in
   `lib-js` yet — DOM events and worker `onmessage` need a host
   injection or JS trampoline (`lib-event-dom` planned).
-- **`lib-json-js`**: a generated JS JSON backend does not exist yet;
-  `json` here is the portable codec. Planned as a generated package
-  inside lib-js (the dom-webidl-browser pattern).
+- **`lib-json-js`**: landed as its own package — module `json-js`
+  (deps `json` + `js`) over the JS `JSON` global; listed above. `json`
+  remains the portable codec.
 
 ## License
 
